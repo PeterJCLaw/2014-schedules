@@ -10,7 +10,7 @@ if __name__ == "__main__":
     shuffled_teams = list(teams())
     random.shuffle(shuffled_teams)
 
-    schedule = open(schedule_file_name(53)).read()
+    schedule = open(schedule_file_name(len(teams())-1)).read()
     lines = schedule.split("\n")
     build = ""
     for line in lines:
