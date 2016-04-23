@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 
+"""
+Helper script to restore the round number comments in a schedule if they
+are removed by automated tooling. Does not cope with being run on a
+schedule which already has round numbers in it.
+"""
+
 from __future__ import print_function
 
 import math
